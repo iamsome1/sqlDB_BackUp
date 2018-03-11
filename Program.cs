@@ -15,7 +15,7 @@ namespace sqlExpressDB_backup
             var connectionString = ConfigurationManager.ConnectionStrings["ConnString"].ConnectionString;
 
 
-            // read backup folder from config file ("C:/temp/")
+            // read backup folder from config file
             var backupFolder = ConfigurationManager.AppSettings["BackupFolder"];
 
             var sqlConStrBuilder = new SqlConnectionStringBuilder(connectionString);
